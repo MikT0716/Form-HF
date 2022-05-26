@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="formHF.css">
+    <title>HBD Invite</title>
+</head>
+<body>
+
+  <div class="container">XY Szülinapi Buli Jelentkezés</div>
+
+<!-- NAME TEXT INPUT -->
+  
+    <div class="row">
+        <label for="name" class="form-label">Add meg pls a neved</label>
+        <div class="col">
+          <input type="text" id="name" class="form-control rounded-shadowy" placeholder="Vezetéknév" required>
+        </div>
+        <div class="col">
+          <input type="text" id="name" class="form-control rounded-shadowy" placeholder="Keresztnév" required>
+        </div>
+      </div>
+
+<!-- EMAIL TEXT INPUT -->
+        <div class="mb-3">
+            <label for="email" class="form-label">Milyen emailcímre irányíthatjuk a postagalambot az ünnepi körlevelekkel?</label>
+            <input type="email" class="form-control rounded-shadowy" id="email" placeholder="name@example.com" required>
+          </div>
+
+<!-- SELECT -->
+    <label for="select" class="form-label">Kije is vagy az ünnepeltnek?</label>
+    <select id="select" class="form-select rounded-shadowy" required>
+      <option selected></option>
+      <option value="1">Rokon</option>
+      <option value="2">Haver</option>
+      <option value="3">Potyázó</option>
+    </select>
+
+<!-- TEXTAREA -->
+          <div class="mb-3">
+            <label for="exampleFormControlTextarea1" class="form-label">Bár nem a te szülinapod, írd le kérlek, milyen kívánságod lenne a partira:</label>
+            <textarea class="form-control rounded-shadowy" id="exampleFormControlTextarea1" rows="3"></textarea>
+          </div>
+
+          <label for="exampleColorInput" class="form-label">Milyen színű lufit hozol?</label>
+          <input type="color" class="form-control form-control-color" id="exampleColorInput" value="#563d7c" title="Choose your color">
+
+<!-- CHECK & RADIO -->
+<div class="form-checks-container">
+  <div class="form-check-container">
+    <div>Mit eszel az alábbiak közül?</div>  
+    <div class="form-check">
+          <input class="form-check-input" type="checkbox" value="Hús" id="Hús">
+          <label class="form-check-label" for="Hús">Hús</label>
+      </div>
+      <div class="form-check">
+          <input class="form-check-input" type="checkbox" value="Hal" id="Hal">
+          <label class="form-check-label" for="Hal">Hal</label>
+      </div>
+      <div class="form-check">
+          <input class="form-check-input" type="checkbox" value="Gaz" id="Gaz">
+          <label class="form-check-label" for="Gaz">Gaz</label>
+      </div>
+      <div class="form-check">
+          <input class="form-check-input" type="checkbox" value="Vegán" id="Vegán">
+          <label class="form-check-label" for="Vegán">Vegán</label>
+      </div>
+    </div>
+
+    
+    <div class="form-check-container">
+    <div>Hova jönnél a csapattal a buli után?</div> 
+          <div class="form-check">
+          <input class="form-check-input" type="radio" name="flexRadioDefault" value="Laser-tag" id="flexRadioDefault1">
+          <label class="form-check-label" for="flexRadioDefault1">Laser-tag</label>
+        </div>
+        <div class="form-check">
+          <input class="form-check-input" type="radio" name="flexRadioDefault" value="Go-kart" id="flexRadioDefault2">
+          <label class="form-check-label" for="flexRadioDefault2">Go-kart</label>
+        </div>
+      </div>
+    </div>
+</div>
+  <br>
+<!-- SLIDER -->
+
+<label for="customRange3" class="form-label">Example range</label>
+<input type="range" class="form-range" min="0" max="5" step="0.5" id="customRange3">
+
+      <div class="container">
+        <button type="submit" class="btn btn-success">Nyomás a partira</button>
+      </div>
+
+</body>
+</html>
